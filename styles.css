@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #1f2937;
+}
+
+.project {
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+#insert {
+  padding: 24px;
+}
+
+.key {
+  font-size: 1.3rem;
+  color: #4b5563;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+th {
+  background-color: #f9fafb;
+  color: #6b7280;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+td {
+  font-size: 1rem;
+  color: #374151;
+}
+
+tr:hover td {
+  background-color: #f3f4f6;
+}
+
+/* Highlighted Key Press */
+.color {
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .project {
+    margin: 12px;
+  }
+
+  th,
+  td {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+}
